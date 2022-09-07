@@ -15,7 +15,7 @@ class _HomePageState extends State<HomePage> {
         child: ElevatedButton(
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
-              return Colors.red;
+              return Colors.blue;
             }),
           ),
           onPressed: () {
