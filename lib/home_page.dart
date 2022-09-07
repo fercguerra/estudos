@@ -15,12 +15,13 @@ class _HomePageState extends State<HomePage> {
         child: ElevatedButton(
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
+              if (states.contains(MaterialState.pressed)) {
+                return Colors.red;
+              }
               return Colors.blue;
             }),
           ),
-          onPressed: () {
-            debugPrint('Clicado');
-          },
+          onPressed: null,
           child: const Text('Meu botão'),
         ),
       ),
